@@ -49,7 +49,7 @@ export function StakedStats({ tokenData }: { tokenData: StakeEntryTokenData }) {
           </div>
         )}
       {tokenData.stakeEntry?.pubkey && (
-        <div className="flex w-full flex-row justify-between text-xs font-semibold">
+        <div className="flex w-full flex-row justify-between text-xs font-semibold"  style={{ display: "none" }}>
           <span>Boost:</span>
           <span className="text-right">
             {(rewardDistributorData.data?.parsed.multiplierDecimals !==
@@ -86,13 +86,13 @@ export function StakedStats({ tokenData }: { tokenData: StakeEntryTokenData }) {
                     rewardsRate.data?.rewardsRateMap[
                       tokenData.stakeEntry.pubkey.toString()
                     ]?.dailyRewards || new BN(0), // max of 5 decimals
-                    Math.min(rewardMintInfo.data.mintInfo.decimals, 5)
+                    Math.min(rewardMintInfo.data.mintInfo.decimals, 3)
                   )}
                 </span>
               </div>
             )}
             {tokenData.stakeEntry && rewardMintInfo.data && (
-              <div className="flex w-full flex-row justify-between text-xs font-semibold" style={{ display: "none" }}>
+              <div className="flex w-full flex-row justify-between text-xs font-semibold">
                 <span>Claim:</span>
                 <span className="text-right">
                   {formatMintNaturalAmountAsDecimal(
@@ -101,7 +101,7 @@ export function StakedStats({ tokenData }: { tokenData: StakeEntryTokenData }) {
                       tokenData.stakeEntry.pubkey.toString()
                     ]?.claimableRewards || new BN(0),
                     // max of 5 decimals
-                    Math.min(rewardMintInfo.data.mintInfo.decimals, 5)
+                    Math.min(rewardMintInfo.data.mintInfo.decimals, 3)
                   ).toLocaleString()}
                 </span>
               </div>
