@@ -12,18 +12,8 @@ export const HeroLarge: React.FC = () => {
   const { data: config } = useStakePoolMetadata()
   return (
     <div className="relative -z-10 flex w-full flex-wrap items-stretch justify-center gap-8 py-8 lg:flex-nowrap lg:justify-between lg:gap-24">
-      <div
-        className="blur-4xl absolute left-8 top-52 -z-10 h-[120px] w-[400px] -rotate-[60deg] blur-[100px]"
-        css={css`
-          background-color: ${config?.colors?.accent};
-        `}
-      />
-      <div
-        className="blur-4xl absolute -right-20 top-72 -z-10 h-[100px] w-[550px] -rotate-[60deg] blur-[120px]"
-        css={css`
-          background-color: ${config?.colors?.accent};
-        `}
-      />
+      
+     
       {config?.imageUrl ? (
         <div className="relative flex w-1/4 grow items-center justify-center rounded-xl">
           <img
