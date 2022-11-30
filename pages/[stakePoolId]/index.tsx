@@ -76,9 +76,10 @@ function StakePoolHome() {
       style={{
         background: stakePoolMetadata?.colors?.primary,
         backgroundImage: `url(${stakePoolMetadata?.backgroundImage})`,
-        backgroundPosition: 'center',
+        backgroundPosition: 'top center',
         backgroundSize:'cover',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment:'fixed'
       }}
     >
       <Head>
