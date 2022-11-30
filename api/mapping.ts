@@ -118,7 +118,7 @@ export const stakePoolMetadatas: StakePoolMetadata[] = [
     imageUrl:
     'https://raw.githubusercontent.com/WildyPixel/dwa_img/main/logo2.png',
     //  'https://www.arweave.net/DWKkkbbOi5x6MJhgulQ6FwcXh-emrcaqg8cjTx5j0PI?ext=png',
-    maxStaked: 5000,
+    maxStaked: 1500,
     nameInHeader: true,
     receiptType: ReceiptType.Original,
     tokenStandard: TokenStandard.NonFungible,
