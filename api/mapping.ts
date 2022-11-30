@@ -108,6 +108,7 @@ export const stakePoolMetadatas: StakePoolMetadata[] = [
   {
     name: 'dwa',
     displayName: 'Bweed Bakery',
+    hostname:'stake.duckzwitattitudes.com',
     description:
     'Stake your D.W.A to earn $Bweed',
     stakePoolAddress: new PublicKey(
