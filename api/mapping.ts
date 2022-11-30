@@ -133,10 +133,6 @@ export const stakePoolMetadatas: StakePoolMetadata[] = [
     },
     links: [
       {
-        text: 'Home',
-        value: 'https://duckzwitattitudes.com',
-      },
-      {
         text: 'Buy Now',
         value: 'https://mint.duckzwitattitudes.com',
       },
