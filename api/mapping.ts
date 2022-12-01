@@ -148,7 +148,7 @@ export const stakePoolMetadatas: StakePoolMetadata[] = [
 
     },
     backgroundImage:
-      'https://raw.githubusercontent.com/WildyPixel/dwa_img/main/bg.jpeg',
+      'https://raw.githubusercontent.com/WildyPixel/dwa_img/main/bg2.jpeg',
   },
   
 ]
